@@ -1,6 +1,8 @@
-package week04.sub01;
+package week04.sub02;
 
-public class VIPCustomer extends Customer{
+import week04.sub02.Customer;
+
+public class VIPCustomer extends Customer {
 
     VIPCustomer(int id, String name) {
         super(id, name);
