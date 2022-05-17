@@ -19,9 +19,12 @@ public class AnimalTest {
 
     void testDownCasting(ArrayList<Animal> animalList) {
         for (Animal animal : animalList) {
-            animal.move();
+            if (animal instanceof Human)
+                ((Human) animal).act();
+            else if (animal instanceof  Tiger)
+                ((Tiger) animal).act();
+            else if (animal instanceof  Eagle)
+                ((Eagle) animal).act();
         }
     }
-
-
 }
